@@ -1,16 +1,14 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-
+import Summary from "./Summary";
 
 const DataPanel = () => {
     return (
-        <Box sx={{ p : 3}}>
-            <Typography variant="h5" sx={{mb:2, fontWeight: 'bold'}}>
-                Sample Data
-            </Typography>
-            <Typography variant="body1">
-                Data display for selected location
+        <Box sx={{ p : 1}}>
+            <Summary />
+            <Typography variant="body1" sx={{ mt: 2 }}>
+                This panel will display all the data for a selected location.
             </Typography>
         </Box>
     );
